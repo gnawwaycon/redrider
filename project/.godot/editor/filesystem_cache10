@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1753961404
+icon.svg::CompressedTexture2D/CompressedTexture2D::6428409028384072410::1751855309::1751855313::1::::<><><>0<>0<>54a4d1c099e7571dbf9f853eaf094b3b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+player.gd::GDScript/GDScript::4340266210154020426::1753960261::0::1::::<>Area2D<><>0<>0<><>::
+player.tscn::PackedScene::109810383490205594::1753961340::0::1::::<><><>0<>0<><>::uid://b23psyhmopyvi::::res://player.gd<>uid://brqk6k7r3m1xu::::res://art/Bikedown1.png<>uid://cpucke16p2sag::::res://art/bikeside.png<>uid://cqg2nn8mu7m70::::res://art/Bikeup1.png<>uid://obgwtsy5x81w::::res://art/bgparallax.png
+::res://art/::1753957422
+bgparallax.png::CompressedTexture2D/CompressedTexture2D::985112804990635174::1753952674::1753952680::1::::<><><>0<>0<>3b08f23a2846afbcae4c7b8743e05d49<>res://.godot/imported/bgparallax.png-ad4598f8348f3faa230ea559762b5dc3.ctex::
+Bikedown1.png::CompressedTexture2D/CompressedTexture2D::3613324174620889290::1753948310::1753948618::1::::<><><>0<>0<>09432557901d7b9563211281b6bdc3cd<>res://.godot/imported/Bikedown1.png-5ef2c43b24369cc6efa5c3061987f12a.ctex::
+bikeside.png::CompressedTexture2D/CompressedTexture2D::5867101120650405878::1753948463::1753948618::1::::<><><>0<>0<>7b86ec624e33cd17e734e95191973f1d<>res://.godot/imported/bikeside.png-7399d3861f2e7e2dd20ba62f0bb1ded4.ctex::
+Bikeup1.png::CompressedTexture2D/CompressedTexture2D::5909912440599859209::1753957416::1753957422::1::::<><><>0<>0<>fe61971bc9ee75939b739502c1e81095<>res://.godot/imported/Bikeup1.png-6d176043887639cc06145179fc0358b3.ctex::
+::res://fonts/::1751855461
+FONTLOG.txt::TextFile/TextFile::-1::1751855460::0::1::::<><><>0<>0<><>::
+LICENSE.txt::TextFile/TextFile::-1::1751855460::0::1::::<><><>0<>0<><>::
+Xolonium-Regular.ttf::FontFile/FontFile::8506634376858665560::1751855460::1751855461::1::::<><><>0<>0<>bf8e477f942cd93c8965e713e37eb5d9<>res://.godot/imported/Xolonium-Regular.ttf-bc2981e3069cff4c34dd7c8e2bb73fba.fontdata::
