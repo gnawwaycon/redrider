@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://btgtcqp4j6be"]
+[gd_scene load_steps=9 format=3 uid="uid://btgtcqp4j6be"]
 
 [ext_resource type="Script" uid="uid://b23psyhmopyvi" path="res://player.gd" id="1_sweqy"]
 [ext_resource type="Texture2D" uid="uid://brqk6k7r3m1xu" path="res://art/Bikedown1.png" id="4_sweqy"]
 [ext_resource type="Texture2D" uid="uid://cpucke16p2sag" path="res://art/bikeside.png" id="5_1jxqw"]
 [ext_resource type="Texture2D" uid="uid://cqg2nn8mu7m70" path="res://art/Bikeup1.png" id="5_2hs0m"]
+[ext_resource type="PackedScene" uid="uid://d2wyle60lyw2r" path="res://DebugDisplay.tscn" id="6_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://obgwtsy5x81w" path="res://art/bgparallax.png" id="7_1jxqw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n7ghd"]
@@ -29,6 +30,7 @@ height = 298.0
 
 [node name="Player" type="Area2D"]
 rotation = 0.127409
+scale = Vector2(1, 1)
 script = ExtResource("1_sweqy")
 metadata/_edit_group_ = true
 
@@ -49,3 +51,5 @@ shape = SubResource("CapsuleShape2D_sweqy")
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture = ExtResource("7_1jxqw")
 centered = false
+
+[node name="DebugDisplay" parent="." instance=ExtResource("6_2hs0m")]

@@ -1,7 +1,9 @@
+CanvasLayer
+Area2D
+RichTextLabel
 ParallaxBackground
 Sprite2D
 ParallaxLayer
 Parallax2D
 CollisionShape2D
 AnimatedSprite2D
-Area2D

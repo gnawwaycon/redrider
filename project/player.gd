@@ -18,6 +18,7 @@ var is_fallen = false
 var reached_end = false
 
 func _ready():
+	DebugDisplay.clear()
 	screen_size = get_viewport_rect().size
 	position = Vector2(50, 375)
 
@@ -95,10 +96,10 @@ func fall_over():
 		velocity = Vector2.ZERO # Stop moving
 	
 		$AnimatedSprite2D.stop()
-		print("Panda has fallen! Press Enter to restart.")
+		DebugDisplay.log("Panda has fallen! Press Enter to restart.")
 		
 func finish_level():
 		reached_end = true
 		velocity = Vector2.ZERO# Stop moving
 		$AnimatedSprite2D.stop()
-		print("You reached the end! Press Enter to restart.")
+		DebugDisplay.log("You reached the end! Press Enter to restart.")
