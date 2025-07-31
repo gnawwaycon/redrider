@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://btgtcqp4j6be"]
+
+[ext_resource type="Script" uid="uid://b23psyhmopyvi" path="res://player.gd" id="1_sweqy"]
+[ext_resource type="Texture2D" uid="uid://brqk6k7r3m1xu" path="res://art/Bikedown1.png" id="4_sweqy"]
+[ext_resource type="Texture2D" uid="uid://cpucke16p2sag" path="res://art/bikeside.png" id="5_1jxqw"]
+[ext_resource type="Texture2D" uid="uid://cqg2nn8mu7m70" path="res://art/Bikeup1.png" id="5_2hs0m"]
+[ext_resource type="Texture2D" uid="uid://obgwtsy5x81w" path="res://art/bgparallax.png" id="7_1jxqw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n7ghd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_2hs0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1jxqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sweqy")
+}],
+"loop": true,
+"name": &"bike",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sweqy"]
+radius = 117.0
+height = 298.0
+
+[node name="Player" type="Area2D"]
+rotation = 0.127409
+script = ExtResource("1_sweqy")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-28, -101)
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_n7ghd")
+animation = &"bike"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -175)
+shape = SubResource("CapsuleShape2D_sweqy")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("7_1jxqw")
+centered = false
